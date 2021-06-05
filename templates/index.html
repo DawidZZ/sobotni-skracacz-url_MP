@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}Strona Główna{% endblock %}
+
+
+{% block content %}
+<h4>✂️ Skracacz URL 2021 🌎</h4>
+<form action="/add" method="post">
+    <div class="row">
+        <div class="ten columns">
+          <input class="u-full-width" type="url" placeholder="Wpisz adres URL" id="long-url" name="long-url">
+        </div>
+        <div class="two columns">
+
+            <input type="submit" value="Skróć">
+        </div>
+      </div>
+
+</form>
+{% endblock %}
